@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preflex Solutions | Data Center Hardware</title>
+<meta name="description" content="Preflex Solutions is a one-stop shop for data center hardware — servers, storage, HCI, networking, data protection and cloud — with the services to deploy them.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="5" rx="1.5"/><rect x="3" y="10" width="18" height="5" rx="1.5"/><rect x="3" y="17" width="18" height="4" rx="1.5"/><path d="M7 5.5h.01M7 12.5h.01M7 19h.01"/></symbol>
+  <symbol id="i-storage" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-hci" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.7 1.5A3.3 3.3 0 0117 18z"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-6 5M12 12l6 5"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11L21 7H6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></symbol>
+  <symbol id="i-arrows" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Genuine data center hardware — servers, storage, HCI, networking &amp; data protection</span>
+    <span class="topbar-links"><a href="#contact">Get a quote</a><a href="#services">Services</a><a href="tel:+918049787917">+91-8049787917</a></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top" aria-label="Preflex Solutions home"><img src="images/preflex-logo.webp" alt="Preflex Solutions"></a>
+
+    <form class="search" id="searchForm" role="search">
+      <select id="searchCat" aria-label="Category">
+        <option value="all">All</option>
+        <option value="servers">Servers</option>
+        <option value="storage">Storage</option>
+        <option value="hci">HCI</option>
+        <option value="protection">Data Protection</option>
+        <option value="network">Networking</option>
+        <option value="cloud">Cloud</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search servers, storage, backup…" aria-label="Search products">
+      <button type="submit" aria-label="Search"><svg class="i"><use href="#i-search"/></svg></button>
+    </form>
+
+    <div class="header-actions">
+      <a class="hbtn" href="#contact"><svg class="i"><use href="#i-user"/></svg><span>Contact</span></a>
+      <button class="hbtn" id="cartBtn" aria-label="Open cart"><svg class="i"><use href="#i-cart"/></svg><span>Cart</span><b id="cartCount">0</b></button>
+    </div>
+  </div>
+
+  <nav class="catnav" aria-label="Categories">
+    <div class="wrap">
+      <a href="#shop" data-cat="servers">Servers</a>
+      <a href="#shop" data-cat="storage">Storage</a>
+      <a href="#shop" data-cat="hci">HCI</a>
+      <a href="#shop" data-cat="protection">Data Protection</a>
+      <a href="#shop" data-cat="network">Networking</a>
+      <a href="#shop" data-cat="cloud">Cloud</a>
+      <a href="#guide">Buying Guide</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<!-- HERO -->
+<section class="hero wrap">
+  <div class="hero-main">
+    <p class="eyebrow">Preflex Solutions</p>
+    <h1>One stop shop for all your data center hardware needs.</h1>
+    <p>Servers, storage, HCI and data protection — with the design, deployment and support to go with all of it.</p>
+    <div class="hero-cta">
+      <a class="btn btn-accent" href="#shop">Shop now</a>
+      <a class="btn btn-ghost" href="#contact">Talk to an engineer</a>
+    </div>
+  </div>
+  <a class="promo promo-a" href="#shop" data-cat="servers">
+    <span class="tag">Server refresh</span>
+    <strong>Replace ageing servers</strong>
+    <span>Tower, rack and blade options for every footprint.</span>
+  </a>
+  <a class="promo promo-b" href="#shop" data-cat="protection">
+    <span class="tag">Data protection</span>
+    <strong>Backup, DR &amp; cyber recovery</strong>
+    <span>Keep your data safe and recoverable.</span>
+  </a>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust wrap" aria-label="Why buy from Preflex Solutions">
+  <div><svg class="i"><use href="#i-truck"/></svg><p><b>Fast dispatch</b><br>Pan-India delivery</p></div>
+  <div><svg class="i"><use href="#i-shield"/></svg><p><b>Genuine hardware</b><br>Full manufacturer warranty</p></div>
+  <div><svg class="i"><use href="#i-clipboard"/></svg><p><b>Free BOM review</b><br>We check your configuration</p></div>
+  <div><svg class="i"><use href="#i-headset"/></svg><p><b>Expert support</b><br>Pre-sales to post-sales</p></div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section wrap" id="categories">
+  <div class="section-head"><h2>Shop by category</h2></div>
+  <div class="cat-grid">
+    <a class="cat-card" href="#shop" data-cat="servers"><svg class="i"><use href="#i-server"/></svg><h3>Servers</h3><p>Tower, rack &amp; blade</p></a>
+    <a class="cat-card" href="#shop" data-cat="storage"><svg class="i"><use href="#i-storage"/></svg><h3>Storage</h3><p>SAN, NAS &amp; unified</p></a>
+    <a class="cat-card" href="#shop" data-cat="hci"><svg class="i"><use href="#i-hci"/></svg><h3>HCI</h3><p>Compute + storage + network</p></a>
+    <a class="cat-card" href="#shop" data-cat="protection"><svg class="i"><use href="#i-shield"/></svg><h3>Data Protection</h3><p>Backup, DR &amp; cyber recovery</p></a>
+    <a class="cat-card" href="#shop" data-cat="network"><svg class="i"><use href="#i-network"/></svg><h3>Networking</h3><p>Switches &amp; firewalls</p></a>
+    <a class="cat-card" href="#shop" data-cat="cloud"><svg class="i"><use href="#i-cloud"/></svg><h3>Cloud</h3><p>Cloud backup &amp; DR</p></a>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="section wrap" id="shop">
+  <div class="section-head">
+    <h2>Featured products</h2>
+    <div class="filters" id="filters" role="tablist" aria-label="Filter products">
+      <button class="chip active" data-cat="all">All</button>
+      <button class="chip" data-cat="servers">Servers</button>
+      <button class="chip" data-cat="storage">Storage</button>
+      <button class="chip" data-cat="hci">HCI</button>
+      <button class="chip" data-cat="protection">Data Protection</button>
+      <button class="chip" data-cat="network">Networking</button>
+      <button class="chip" data-cat="cloud">Cloud</button>
+    </div>
+  </div>
+  <p class="result-note" id="resultNote" aria-live="polite"></p>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<!-- BUYING GUIDE -->
+<section class="section band" id="guide">
+  <div class="wrap">
+    <div class="section-head"><h2>Not sure what to buy?</h2></div>
+    <div class="guide-grid">
+      <article class="guide-card">
+        <h3><svg class="i"><use href="#i-server"/></svg> Choosing a server</h3>
+        <ul>
+          <li><b>Tower</b> — small business or branch office; file sharing and light apps. Easy to upgrade and cool.</li>
+          <li><b>Rack</b> — SME data center; the balanced choice for compute, storage and networking.</li>
+          <li><b>Blade</b> — larger enterprise with limited floor space and many servers for demanding applications.</li>
+        </ul>
+      </article>
+      <article class="guide-card">
+        <h3><svg class="i"><use href="#i-storage"/></svg> Choosing storage</h3>
+        <ul>
+          <li><b>NAS</b> — file sharing, archives, CCTV and media. Simple and cost-effective.</li>
+          <li><b>SAN</b> — mission-critical databases and performance-sensitive workloads.</li>
+          <li><b>Unified</b> — both file and block data on a single platform.</li>
+        </ul>
+      </article>
+      <article class="guide-card">
+        <h3><svg class="i"><use href="#i-hci"/></svg> HCI or three-tier?</h3>
+        <ul>
+          <li><b>Choose HCI</b> if you run many virtual machines, want one console instead of silos, or are building a private cloud, VDI or a remote-office site.</li>
+          <li><b>Choose three-tier</b> if you need to scale compute and storage independently or support physical servers too.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section wrap" id="services">
+  <div class="section-head"><h2>Services</h2><p>Hardware is only half the job. We help before, during and after the sale.</p></div>
+  <div class="service-grid">
+    <article class="service"><svg class="i"><use href="#i-clipboard"/></svg><h3>Solution design &amp; BOM</h3><p>Tell us the workload; we size it, design it and build a clean bill of materials.</p></article>
+    <article class="service"><svg class="i"><use href="#i-search"/></svg><h3>Site readiness survey</h3><p>We review your existing infrastructure and give you a realistic timeline before anything ships.</p></article>
+    <article class="service"><svg class="i"><use href="#i-server"/></svg><h3>Installation</h3><p>Basic and advanced installation, agreed in a fixed scope of work and signed off on completion.</p></article>
+    <article class="service"><svg class="i"><use href="#i-arrows"/></svg><h3>Data migration</h3><p>Move workloads and data from legacy systems to your new platform with minimal downtime.</p></article>
+    <article class="service"><svg class="i"><use href="#i-book"/></svg><h3>Training</h3><p>Hands-on operational training for your team and your partners.</p></article>
+    <article class="service"><svg class="i"><use href="#i-headset"/></svg><h3>Managed services</h3><p>Let us run day-to-day infrastructure operations for you as a service.</p></article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section band" id="process">
+  <div class="wrap">
+    <div class="section-head"><h2>How it works</h2></div>
+    <ol class="steps">
+      <li><span>1</span><h3>Discover</h3><p>We ask about workloads, capacity, performance, connectivity and budget.</p></li>
+      <li><span>2</span><h3>Design</h3><p>You get a recommended architecture and a BOM you can understand.</p></li>
+      <li><span>3</span><h3>Deliver</h3><p>Hardware is supplied, installed and signed off against the agreed scope.</p></li>
+      <li><span>4</span><h3>Support</h3><p>Training, migration and managed services keep it running.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section wrap about" id="about">
+  <div class="about-text">
+    <h2>About Preflex Solutions</h2>
+    <p>Founded in 2014 and based in Bengaluru, Preflex Solutions has grown into one of India's leading providers of data center hardware — servers, storage, HCI, networking and data protection — sized, delivered and supported for infrastructure of every size.</p>
+    <p>Whether you need a single tower server for a branch office, or a full data center refresh, our engineers help you choose what fits, and stay involved through implementation and beyond.</p>
+    <ul class="ticks">
+      <li><svg class="i"><use href="#i-check"/></svg>Servers, storage, HCI, networking and data protection under one roof</li>
+      <li><svg class="i"><use href="#i-check"/></svg>Brand-neutral advice — we recommend what fits your workload</li>
+      <li><svg class="i"><use href="#i-check"/></svg>Pre-sales, implementation and post-sales support from the same team</li>
+    </ul>
+  </div>
+  <div class="about-panel">
+    <h3>Who we work with</h3>
+    <div class="who">
+      <div><b>Enterprises</b><span>Data center refresh and digital transformation</span></div>
+      <div><b>SMEs</b><span>Right-sized servers, storage and backup</span></div>
+      <div><b>Resellers &amp; partners</b><span>BOM help, enablement and quotes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section band" id="contact">
+  <div class="wrap contact">
+    <div>
+      <h2>Get a quote</h2>
+      <p>Send us your requirement — even a rough one. The more you tell us, the faster we can quote.</p>
+      <ul class="contact-list">
+        <li><b>Email</b> <a href="mailto:sales@preflexsol.com">sales@preflexsol.com</a></li>
+        <li><b>Phone</b> <a href="tel:+918049787917">+91-8049787917</a> · <a href="tel:+919741004028">+91-9741004028</a></li>
+        <li><b>Address</b> Bengaluru, Karnataka, India</li>
+        <li><b>Hours</b> Mon–Sat, 9:30 am – 6:30 pm</li>
+      </ul>
+    </div>
+
+    <form class="form" id="quoteForm" novalidate>
+      <div class="row">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Company<input name="company" autocomplete="organization"></label>
+      </div>
+      <div class="row">
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      </div>
+      <div class="row">
+        <label>I'm interested in
+          <select name="interest">
+            <option>Servers</option><option>Storage</option><option>HCI</option>
+            <option>Data protection / backup</option><option>Networking</option>
+            <option>Cloud</option><option>Services</option><option>Full data center refresh</option>
+          </select>
+        </label>
+        <label>Capacity / quantity <input name="capacity" placeholder="e.g. 20 TB, 10 servers"></label>
+      </div>
+      <label>Tell us about your workload
+        <textarea name="message" id="message" rows="5" placeholder="Applications, current setup, budget, timeline…"></textarea>
+      </label>
+      <button class="btn btn-accent" type="submit">Send request</button>
+      <p class="form-note" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="footer-logo" href="#top">Preflex Solutions</a>
+      <p>Data center hardware — with the services to deploy them.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#shop" data-cat="servers">Servers</a><a href="#shop" data-cat="storage">Storage</a><a href="#shop" data-cat="hci">HCI</a><a href="#shop" data-cat="protection">Data Protection</a><a href="#shop" data-cat="network">Networking</a></div>
+    <div><h4>Company</h4><a href="#about">About us</a><a href="#services">Services</a><a href="#guide">Buying guide</a><a href="#contact">Contact</a></div>
+    <div><h4>Contact</h4><a href="mailto:sales@preflexsol.com">sales@preflexsol.com</a><a href="tel:+918049787917">+91-8049787917</a><a href="tel:+919741004028">+91-9741004028</a></div>
+  </div>
+  <div class="wrap footer-bottom">© <span id="year"></span> Preflex Solutions Pvt. Ltd. All rights reserved. Hardware product names and prices are illustrative.</div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head"><h2>Your cart</h2><button class="icon-btn" id="cartClose" aria-label="Close cart"><svg class="i"><use href="#i-close"/></svg></button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="subtotal"><span>Estimated total</span><b id="cartTotal">—</b></div>
+    <button class="btn btn-accent block" id="cartQuote">Request quote for these items</button>
+    <button class="btn-link" id="cartClear">Clear cart</button>
+  </div>
+</aside>
+
+<script src="hardware-script.js"></script>
+</body>
+</html>
